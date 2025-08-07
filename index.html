@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación - Defensa de Proyecto de Titulación</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floating-icons" id="floatingIcons"></div>
+    <div class="circuit-lines" id="circuitLines"></div>
+    
+    <!-- SOBRE EXTERIOR DE LA INVITACIÓN -->
+    <div class="invitation-envelope" id="invitationEnvelope">
+        <div class="envelope-content">
+            <div class="envelope-seal">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h1 class="envelope-title">Invitación Especial</h1>
+            <p class="envelope-subtitle">Defensa de Proyecto de Titulación</p>
+            <div class="envelope-decoration">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-trophy"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <button class="open-invitation-btn" id="openInvitation">
+                <i class="fas fa-envelope-open"></i>
+                Abrir Invitación
+            </button>
+            <div class="envelope-footer">
+                <p>
+                    <i class="fas fa-hand-pointer hand-icon"></i>
+                    Haz clic para ver los detalles del evento
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- INVITACIÓN PRINCIPAL DINÁMICA -->
+    <div class="container invitation-main" id="invitationMain">
+        <div class="invitation-card">
+            <div class="close-button" id="closeInvitation">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <!-- INDICADOR DE PROGRESO -->
+            <div class="progress-indicator">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="currentStep">1</span> / <span id="totalSteps">6</span>
+                </div>
+            </div>
+            
+            <!-- SECCIÓN 1: PRESENTACIÓN -->
+            <div class="section active" id="section1">
+                <div class="header">
+                    <div class="mega-icon-cluster">
+                        <i class="fas fa-laptop-code cluster-icon" title="Desarrollo"></i>
+                        <i class="fas fa-project-diagram cluster-icon" title="Proyecto"></i>
+                        <i class="fas fa-chalkboard cluster-icon" title="Presentación"></i>
+                        <i class="fas fa-code cluster-icon" title="Código"></i>
+                        <i class="fas fa-database cluster-icon" title="Sistema"></i>
+                        <i class="fas fa-cogs cluster-icon" title="Ingeniería"></i>
+                        <i class="fas fa-award cluster-icon" title="Logro"></i>
+                        <i class="fas fa-rocket cluster-icon" title="Innovación"></i>
+                    </div>
+                    
+                    <div class="graduation-icon">🎯</div>
+                    <h1 class="title">DEFENSA DE PROYECTO</h1>
+                    <h2 class="title-secondary">DE TITULACIÓN</h2>
+                    <p class="subtitle">Ingeniero en Software</p>
+                    <div class="student-name">Brayan Daniel Patiño Abad</div>
+                    <div class="achievement-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>Culminación de la Carrera Universitaria</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 2: TRAYECTORIA ACADÉMICA -->
+            <div class="section" id="section2">
+                <div class="story-section">
+                    <div class="story-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h2 class="section-title">Mi Trayectoria Académica</h2>
+                    <div class="story-content">
+                        <p class="story-text">
+                            Después de <strong>años de formación académica</strong> y <strong>meses de desarrollo intenso</strong>, 
+                            ha llegado el momento más esperado de mi carrera universitaria.
+                        </p>
+                        <p class="story-text">
+                            Este proyecto representa la culminación de todo el conocimiento adquirido, 
+                            las noches de estudio, los desafíos superados y la pasión por la tecnología.
+                        </p>
+                        <div class="highlight-box">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"El momento de demostrar que todo el esfuerzo valió la pena"</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3: TERMINAL DE CÓDIGO -->
+            <div class="section" id="section3">
+                <div class="code-section">
+                    <h2 class="section-title">
+                        <i class="fas fa-terminal"></i>
+                        Proyecto Finalizado
+                    </h2>
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <div class="terminal-button red"></div>
+                                <div class="terminal-button yellow"></div>
+                                <div class="terminal-button green"></div>
+                            </div>
+                            <div class="terminal-title">~/proyecto-titulacion.js</div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">// Proyecto de Titulación - Ingeniería en Software</div>
+                            <div class="code-line">const defensaTesis = {</div>
+                            <div class="code-line">&nbsp;&nbsp;estudiante: "Brayan Daniel Patiño Abad",</div>
+                            <div class="code-line">&nbsp;&nbsp;carrera: "Ingeniería en Software",</div>
+                            <div class="code-line">&nbsp;&nbsp;universidad: "ESPE",</div>
+                            <div class="code-line">&nbsp;&nbsp;evento: "Defensa de Proyecto",</div>
+                            <div class="code-line">&nbsp;&nbsp;estado: "✅ COMPLETADO"</div>
+                            <div class="code-line">};</div>
+                            <div class="code-line"><br>console.log("🎯 ¡Listo para defender!");</div>
+                            <div class="cursor"></div>
+                        </div>
+                    </div>
+                    <div class="achievement-status">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Proyecto desarrollado exitosamente</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 4: DETALLES DEL EVENTO -->
+            <div class="section" id="section4">
+                <div class="event-details">
+                    <div class="event-header">
+                        <h2><i class="fas fa-calendar-check"></i> Detalles del Evento</h2>
+                        <p class="event-subtitle">Es momento de que mi trabajo sea evaluado por el tribunal académico</p>
+                    </div>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <div class="detail-icon calendar">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Fecha</h4>
+                                <span>Martes 12 de Agosto de 2025</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon clock">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Hora</h4>
+                                <span>4:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Lugar</h4>
+                                <span>Universidad de las Fuerzas Armadas ESPE</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon presentation">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Evento</h4>
+                                <span>Defensa ante Tribunal Académico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 5: INVITACIÓN PERSONAL -->
+            <div class="section" id="section5">
+                <div class="invitation-message">
+                    <div class="invitation-heart">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2 class="invitation-title">Tu Presencia es Invaluable</h2>
+                    <div class="invitation-content">
+                        <p class="invitation-text">
+                            Este momento tan importante de mi carrera profesional sería aún más especial 
+                            <strong>con tu compañía</strong>.
+                        </p>
+                        <p class="invitation-text">
+                            Acompáñame en la culminación de años de esfuerzo, dedicación y sueños. 
+                            Tu apoyo ha sido fundamental en esta trayectoria.
+                        </p>
+                        <div class="memories-box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p>"Juntos celebremos este logro que también es tuyo"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 6: CONFIRMACIÓN -->
+            <div class="section" id="section6">
+                <div class="confirmation-section">
+                    <div class="confirmation-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h2 class="confirmation-title">¡Confirma tu Asistencia!</h2>
+                    <p class="confirmation-text">
+                        Haz clic en el botón para confirmar que me acompañarás en este día tan especial
+                    </p>
+                    
+                    <a href="https://wa.me/593993396358?text=🎯%20¡Hola%20Brayan!%20Quiero%20confirmar%20mi%20asistencia%20a%20tu%20defensa%20de%20proyecto%20de%20titulación%20el%20martes%2012%20de%20agosto%20a%20las%204:00%20PM%20en%20la%20ESPE.%20¡Felicitaciones%20por%20llegar%20a%20esta%20etapa%20tan%20importante!%20🎓👨‍💻%20¡Te%20deseo%20mucho%20éxito!" 
+                       class="whatsapp-mega-button" target="_blank">
+                        <i class="fab fa-whatsapp whatsapp-icon"></i>
+                        Confirmar Asistencia
+                    </a>
+
+                    <div class="gratitude-section">
+                        <h3>¡Gracias por ser parte de mi historia! 🚀</h3>
+                        <div class="footer-icons">
+                            <i class="fas fa-code footer-icon"></i>
+                            <i class="fas fa-laptop-code footer-icon"></i>
+                            <i class="fas fa-trophy footer-icon"></i>
+                            <i class="fas fa-graduation-cap footer-icon"></i>
+                        </div>
+                        <p><strong>ESTADO DEL PROYECTO:</strong> <span class="success-status">LISTO PARA DEFENDER ✅</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTROLES DE NAVEGACIÓN -->
+            <div class="navigation-controls">
+                <button class="nav-btn prev-btn" id="prevBtn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    Anterior
+                </button>
+                <button class="nav-btn next-btn" id="nextBtn">
+                    Siguiente
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
